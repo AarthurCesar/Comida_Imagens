@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body, html {
+  margin: 0;
+  height: 100%;
+  font-family: "Quicksand", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .background::before {
+    content: "";
+    position: absolute;
+    top: -20px; left: -20px; right: -20px; bottom: -20px;
+    background-image: url("4492606.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(12px);
+    z-index: -1;
+  }
+  
+  
+  
+.content {
+  position: relative;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.card-container {
+  background-color: rgba(175, 30, 30, 0.2);
+  border-radius: 1%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  color: white;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+
+hr {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card {
+  padding: 20px;
+  max-width: 300px;
+  background-color: rgba(255 255 255 / 0.8);
+  color: #333;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.card img {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+.card button {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  /* border-radius: 8px; */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.5s ease;
+  width: 100%;
+}
+
+.card button:hover {
+  background-color: #ff3c00;
+  transform: scale(1.2) rotate(5deg);
+}
+
+img:hover {
+  transform: scale(1.12);
+}
+
+p {
+  font-size: large;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+
+#loading {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      font-size: 1.5rem;
+      z-index: 9999;
+    }
+
+    
